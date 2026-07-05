@@ -1,0 +1,17 @@
+{
+  "number": "0x1234",
+  "hash": "0xabc123",
+  "parentHash": "0xdef456",
+  "timestamp": "0x6690a000",
+  "transactions": [
+    {
+      "hash": "0xtx1",
+      "from": "0xsender1",
+      "to": "0xreceiver1",
+      "value": "0xde0b6b3a7640000",
+      "gasPrice": "0x3b9aca00",
+      "input": "0x",
+      "nonce": "0x1"
+    }
+  ]
+}

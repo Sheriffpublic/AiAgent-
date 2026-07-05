@@ -1,0 +1,34 @@
+{
+  "addresses": [
+    {
+      "address": "0xba214c1c1928a32bffe790263e38b4af9bfcd18d",
+      "label": "Tornado Cash Proxy",
+      "category": "mixer"
+    },
+    {
+      "address": "0x4200000000000000000000000000000000000010",
+      "label": "L2StandardBridge",
+      "category": "bridge"
+    },
+    {
+      "address": "0x3154cf16ccdb4c6d922629664174b904d80f2c35",
+      "label": "Base Bridge",
+      "category": "bridge"
+    },
+    {
+      "address": "0x2626664c2603336e57b271c5c0b26f421741e481",
+      "label": "Uniswap V2/V3 Router",
+      "category": "dex"
+    },
+    {
+      "address": "0x198ef799ba9284f0c3fc96fa13fe7ea7a4960d40",
+      "label": "Aerodrome Router",
+      "category": "dex"
+    },
+    {
+      "address": "0x2f39d218133afab8f2b819b1066c7e434ad94e9e",
+      "label": "Aave Pool",
+      "category": "lending"
+    }
+  ]
+}

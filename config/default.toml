@@ -1,0 +1,43 @@
+[chain]
+rpc_url = "https://mainnet.base.org"
+ws_url = "wss://base-rpc.publicnode.com"
+chain_id = 8453
+
+[thresholds]
+large_transfer_eth = 100.0
+rapid_movement_window_sec = 60
+rapid_movement_count = 3
+flash_loan_value_eth = 100.0
+unusual_gas_multiplier = 2.0
+high_frequency_tx_per_hour = 20
+min_alert_value_eth = 0.0
+
+[scanning]
+block_poll_interval = 2.0
+max_reconnect_delay = 60.0
+subscription_queue_size = 500
+
+[output]
+format = "json"
+log_level = "INFO"
+color = true
+output_file = ""
+
+[fund_tracing]
+max_depth = 10
+min_cluster_volume_eth = 1.0
+persistence_path = ""
+
+[heuristics]
+enabled = [
+    "large_transfer",
+    "rapid_movement",
+    "known_scam",
+    "mixer_interaction",
+    "flash_loan",
+    "unusual_gas",
+    "contract_creation",
+    "high_frequency_sender",
+    "bridge_suspicious",
+    "value_obfuscation",
+]

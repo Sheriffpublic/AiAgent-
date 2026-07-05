@@ -1,0 +1,79 @@
+# Example configuration for Base Blockchain Monitor
+# Copy this file and modify as needed
+
+[chain]
+# WebSocket endpoint (required for real-time monitoring)
+ws_url = "wss://base-rpc.publicnode.com"
+
+# HTTP endpoint (for historical queries)
+rpc_url = "https://mainnet.base.org"
+
+# Base chain ID (do not change)
+chain_id = 8453
+
+[thresholds]
+# Large transfer alert threshold (ETH)
+large_transfer_eth = 10.0
+
+# Rapid movement detection window (seconds)
+rapid_movement_window_sec = 300
+
+# Number of txs in window to trigger alert
+rapid_movement_count = 5
+
+# Flash loan value threshold (ETH)
+flash_loan_value_eth = 1000.0
+
+# Gas price multiplier for unusual gas detection
+unusual_gas_multiplier = 3.0
+
+# High frequency sender threshold (txs per hour)
+high_frequency_tx_per_hour = 50
+
+[scanning]
+# Fallback polling interval (seconds)
+block_poll_interval = 2.0
+
+# Max reconnection delay (seconds)
+max_reconnect_delay = 60.0
+
+# Subscription queue size
+subscription_queue_size = 500
+
+[output]
+# Output format: json, text
+format = "json"
+
+# Log level: DEBUG, INFO, WARNING, ERROR
+log_level = "INFO"
+
+# Enable colored terminal output
+color = true
+
+# JSON log output file (null = disabled)
+output_file = ""
+
+[fund_tracing]
+# Max depth for fund tracing
+max_depth = 10
+
+# Min cluster volume to report (ETH)
+min_cluster_volume_eth = 1.0
+
+# SQLite persistence path (null = disabled)
+persistence_path = ""
+
+[heuristics]
+# Enabled heuristic rules
+enabled = [
+    "large_transfer",
+    "rapid_movement",
+    "known_scam",
+    "mixer_interaction",
+    "flash_loan",
+    "unusual_gas",
+    "contract_creation",
+    "high_frequency_sender",
+    "bridge_suspicious",
+    "value_obfuscation",
+]
